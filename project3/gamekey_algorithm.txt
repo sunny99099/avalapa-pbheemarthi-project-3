@@ -1,0 +1,8 @@
+Algorithm Sketch to generate game keys:
+
+step 1: n1 -> generate a random digit 0 ~ 9
+        using Math.floor(Math.random() * 10)
+step 2: n2 -> generate a second random digit until n2 != n1. 
+        That is, if n2 == n1, generate again
+step 3: n3 -> generate a third random digit until n3 != n1 and n3 != n2
+        That is, if n3 == n1 or n3 == n2, generate again
